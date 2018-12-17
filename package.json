@@ -1,0 +1,38 @@
+{
+  "name": "cashica",
+  "version": "1.0.0",
+  "description": "Cashica | 貸し借りを可視化して借りパクをなくす",
+  "author": "NAKAMURA Kotaro <n.kotaro.0101@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "build:nuxt": "nuxt build",
+    "build": "yarn clean;yarn build:nuxt;yarn copy # for Firebase",
+    "clean": "rm -rf {dist,.nuxt}",
+    "copy": "mkdir dist;cp -R functions dist/server;cp -R app/static/ dist/client;cp -R .nuxt dist/server;cp -R dist/server/.nuxt/dist dist/client/assets",
+    "format": "prettier './app/**/*.{js,vue}' --write",
+    "deploy": "firebase deploy",
+    "deployrules": "firebase deploy --only firestore:rules"
+  },
+  "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/vuetify": "^0.4.3",
+    "autolinker": "^1.6.0",
+    "firebase": "^5.7.0",
+    "htmlspecialchars": "^1.0.5",
+    "jsqr": "^1.1.1",
+    "nuxt": "^2.0.0",
+    "vue-qriously": "^1.1.1",
+    "vuexfire": "^3.0.0-alpha.14"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}

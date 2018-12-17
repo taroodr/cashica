@@ -1,0 +1,25 @@
+{
+  "name": "cashica",
+  "version": "1.0.0",
+  "description": "Cashica | 貸し借りを可視化して借りパクをなくす",
+  "author": "NAKAMURA Kotaro <n.kotaro.0101@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/vuetify": "^0.4.3",
+    "autolinker": "^1.6.0",
+    "express": "^4.16.3",
+    "firebase": "^5.7.0",
+    "firebase-admin": "^6.0.0",
+    "firebase-functions": "^2.0.5",
+    "htmlspecialchars": "^1.0.5",
+    "jsqr": "^1.1.1",
+    "nuxt": "^2.1.0",
+    "vue-qriously": "^1.1.1",
+    "vuexfire": "^3.0.0-alpha.14"
+  },
+  "engines": {
+    "node": "8"
+  }
+}
